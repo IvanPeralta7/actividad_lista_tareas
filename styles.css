@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+input[type="text"] {
+padding: 8px;
+width: 90%;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin: 5px 10px;
+}
+button {
+padding: 8px 10px;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+}
+button:hover {
+background-color: #285b91;
+}
+ul {
+list-style-type: none;
+padding: 0;
+}
+li {
+display: flex;
+align-items: center;
+margin: 5px 10px;
+padding: 8px;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.completed {
+text-decoration: line-through;
+color: #888;
+}
+button.delete {
+    margin-left: auto;
+    background-color: #dc3545;
+}
+
+.botones-tareas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.botones-tareas button{
+    margin: 3px 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+/*Medias queries*/
+
+@media only screen and (max-width: 1200px){
+    body{
+        display: block;
+    }
+    input[type="text"], li{
+        width: 80%;
+    }
+    #boton-agregar{
+        width: 15% ;
+    }
+    .botones-tareas{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #boton-agregar{
+        margin-left: 30%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #boton-agregar{
+        width: 20%;
+        padding: 8px 3px;
+    }
+}
